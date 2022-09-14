@@ -21,3 +21,8 @@ Route::get('/', function () {
 Route::get('/hello', function () {
     return 'hello world amd welcome home';
 });
+
+
+Route::get('/3rd', function () {
+    return 'this is the 3rd page';
+});
