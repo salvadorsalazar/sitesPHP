@@ -18,22 +18,22 @@ Route::get('/', function () {
     return view('listings',[
         'heading' => 'lateset listings',
         'listings' => [
-            // [
-            //     'id' => 1,
-            //     'title' => 'listing One',
-            //     'description' => 'thie is a description of text
-            //      the will e enterees int
-            //     this array ; oidfsdfsoidfhs
-            //     uhfsdhfsuihdfsduf'
-            // ],
-            //  [
-            //     'id' => 2,
-            //     'title' => 'listing TWO',
-            //     'description' => 'thie is a description of text
-            //      the will e enterees int
-            //     this array ; oidfsdfsoidf
-            //     hsuhfsdhfsuihdfsduf'
-            //  ]
+            [
+                'id' => 1,
+                'title' => 'listing One',
+                'description' => 'thie is a description of text
+                 the will e enterees int
+                this array ; oidfsdfsoidfhs
+                uhfsdhfsuihdfsduf'
+            ],
+             [
+                'id' => 2,
+                'title' => 'listing TWO',
+                'description' => 'thie is a description of text
+                 the will e enterees int
+                this array ; oidfsdfsoidf
+                hsuhfsdhfsuihdfsduf'
+             ]
         
         ]
           ]);
