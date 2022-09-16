@@ -9,14 +9,17 @@
 {{$test}} --}}
 
 
-@if(count($listings) == 0)
+{{-- @if(count($listings) == 0)
 <p>no listings found</p>
-@endif
+@endif --}}
 
+
+@unless (count($listings) == 0)
+    
 @foreach($listings as $listing)    
 
 <h2>
-    {{$listing['title']}}
+  <a href="/listings/{{$listing['id']}}">  {{$listing['title']}}</a>
 </h2>
 
     <p>
@@ -25,7 +28,9 @@
 
 @endforeach
 
-
+@else
+<p>No listing found</p>
+@endunless
 
 {{-- original code , first code ========================================= --}}
 
