@@ -10,7 +10,7 @@
 
 
 @if(count($listings) == 0)
-<p>no liatinga found</p>
+<p>no listings found</p>
 @endif
 
 @foreach($listings as $listing)    

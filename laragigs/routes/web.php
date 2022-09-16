@@ -33,6 +33,12 @@ Route::get('/', function () {
                  the will e enterees int
                 this array ; oidfsdfsoidf
                 hsuhfsdhfsuihdfsduf'
+             ],
+             [
+                'id'=> 3,
+                'title'=> 'listing three:',
+                'age' => 55,
+                'description'=> 'this is another listing with age included'
              ]
         
         ]
