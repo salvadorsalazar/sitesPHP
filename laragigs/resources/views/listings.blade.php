@@ -1,4 +1,6 @@
 <!-- <h1>Listings</h1> -->
+@extends('layout')
+@section('content')
 
 <h1>{{$heading}}</h1>
 
@@ -31,6 +33,7 @@
 @else
 <p>No listing found</p>
 @endunless
+@endsection
 
 {{-- original code , first code ========================================= --}}
 
