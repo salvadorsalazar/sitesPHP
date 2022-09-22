@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ListingController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Listing;
@@ -14,28 +15,11 @@ use App\Models\Listing;
 |
 */
 //all listings
-Route::get('/', function () {
-    return view('listings',[
-        'heading' => 'lateset listings',
-        'listings' => Listing::all()
-          ]);
-
-
-
-
-});
+Route::get('/', [ListingController::class,'index']);
         
   
           //single listing
-Route::get('/listings/{listing}', function(Listing $listing){
-    
-   
-            return view('listing',[
-        'listing' => $listing
-    ]); 
-    
-
-});
+Route::get('/listings/{listing}', [ListingController::class,'show']);
 
 
 
