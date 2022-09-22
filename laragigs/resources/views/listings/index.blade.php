@@ -1,6 +1,5 @@
 <!-- <h1>Listings</h1> -->
-@extends('layout')
-@section('content')
+<x-layout>
 @include('partials._hero')
 @include('partials._search')
 <div
@@ -38,7 +37,8 @@
 <p>No listing found</p>
 @endunless
 </div>
-@endsection
+
+</x-layout>
 
 {{-- original code , first code ========================================= --}}
 
