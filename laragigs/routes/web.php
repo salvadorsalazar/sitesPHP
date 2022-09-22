@@ -14,6 +14,8 @@ use App\Models\Listing;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 //all listings
 Route::get('/', [ListingController::class,'index']);
         
