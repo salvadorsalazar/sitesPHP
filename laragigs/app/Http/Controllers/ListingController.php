@@ -23,4 +23,10 @@ return view('listings.index',[
     }
 
 
+    //show create form
+    public function create(){
+        return view('listings.create');
+    }
+
+
 }
