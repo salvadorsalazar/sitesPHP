@@ -43,9 +43,12 @@ return view('listings.index',[
             'tags'=> 'required',
             'description' => 'required'
         ]);
-        return redirect('/');
+        
+        Listing::create($formFields);
+        
+        
+        return redirect('/')->with('message','listign created');
 
     }
-
 
 }

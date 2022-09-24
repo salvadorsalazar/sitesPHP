@@ -24,7 +24,7 @@
                                 name="company"
                             />
                             @error('company')
-                                p.text
+                               <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
                             @enderror
                         </div>
 
@@ -38,6 +38,9 @@
                                 name="title"
                                 placeholder="Example: Senior Laravel Developer"
                             />
+                             @error('title')
+                               <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
+                            @enderror
                         </div>
 
                         <div class="mb-6">
@@ -52,6 +55,9 @@
                                 name="location"
                                 placeholder="Example: Remote, Boston MA, etc"
                             />
+                             @error('location')
+                               <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
+                            @enderror
                         </div>
 
                         <div class="mb-6">
@@ -89,6 +95,9 @@
                                 name="tags"
                                 placeholder="Example: Laravel, Backend, Postgres, etc"
                             />
+                             @error('tags')
+                               <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
+                            @enderror
                         </div>
 
                         {{-- <div class="mb-6">
