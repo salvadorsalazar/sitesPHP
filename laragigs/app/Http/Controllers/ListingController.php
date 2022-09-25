@@ -11,10 +11,11 @@ class ListingController extends Controller
 {
     //show all listings
     public function index(){
+           
 return view('listings.index',[
         
-        'listings' => Listing::latest()->filter(request(['tag','search']))->paginate(2)
-          ]);
+        'listings' => Listing::latest()->filter(request(['tag','search']))->paginate(6)
+          ]);// ..or use ----   simplepaginate for ACK or NEXT button link at bottom
     }
 
     //showsingle listing
@@ -33,6 +34,8 @@ return view('listings.index',[
 
     //store listing data
     public function store(Request $request){
+
+
         // dd($request->all());
         $formFields = $request->validate([
             'title' => 'required',
@@ -43,6 +46,10 @@ return view('listings.index',[
             'tags'=> 'required',
             'description' => 'required'
         ]);
+
+        if($request->hasFile('logo')){
+            $formFields['logo' ] = $request->file('logo')->store('logos','public');
+        }
         
         Listing::create($formFields);
         
