@@ -47,7 +47,7 @@ return view('listings.index',[
         Listing::create($formFields);
         
         
-        return redirect('/')->with('message','listign created');
+        return redirect('/')->with('message','LISTING CREATED');
 
     }
 
