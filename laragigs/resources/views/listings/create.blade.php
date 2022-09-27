@@ -104,6 +104,11 @@ value="{{old('tags')}}"
                             @enderror
                         </div>
 
+
+
+{{-- logo ssection --}}
+
+
                         <div class="mb-6">
                             <label for="logo" class="inline-block text-lg mb-2">
                                 Company Logo
@@ -118,6 +123,13 @@ value="{{old('tags')}}"
                             @enderror
 
                         </div>
+
+
+
+{{-- log section --}}
+
+
+
 
                         <div class="mb-6">
                             <label

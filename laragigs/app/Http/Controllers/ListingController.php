@@ -36,7 +36,7 @@ return view('listings.index',[
     public function store(Request $request){
 
 
-        dd($request->file('logo')->store());
+        // dd($request->file('logo'));
         $formFields = $request->validate([
             'title' => 'required',
             'company' => ['required', Rule::unique('listings', 'company')],
