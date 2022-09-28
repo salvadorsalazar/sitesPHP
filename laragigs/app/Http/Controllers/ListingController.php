@@ -6,6 +6,7 @@ use App\Models\Listing;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Routing\Controller;
+use PhpParser\Node\Expr\List_;
 
 class ListingController extends Controller
 {
@@ -87,10 +88,15 @@ public function edit(Listing $listing){
         $listing->update($formFields);
         
         
-        return back()->with('message','LISTING CREATED');
+        return back()->with('message','LISTING UPDATED');
+        
 
     }
 
-
+//delete listing
+public function destroy(Listing $listing){
+    $listing->delete();
+    return redirect("/")->with('message','listing DELETED');
+}
 
 }
