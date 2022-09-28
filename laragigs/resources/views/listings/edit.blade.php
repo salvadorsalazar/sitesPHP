@@ -12,8 +12,7 @@
 
                     <form method="POST" action="/listings/{{$listing->id}}" enctype="multipart/form-data">
                         @csrf
-
-                            @method('PUT')
+                         @method('PUT')
 
                         <div class="mb-6">
                             <label
@@ -154,8 +153,8 @@ value="{{$listing->tags}}"
                                 name="description"
                                 rows="10"
                                 placeholder="Include tasks, requirements, salary, etc"
-                                value="{{$listing->description}}"
-                            ></textarea>
+                            >                                  {{$listing->description}}
+ </textarea>
                         </div>
 
                         <div class="mb-6">
