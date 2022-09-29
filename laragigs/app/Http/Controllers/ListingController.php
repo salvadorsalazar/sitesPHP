@@ -52,6 +52,8 @@ return view('listings.index',[
             $formFields['logo'] = $request->file('logo')->store('logos','public');
         }
         
+            $formFields['user_id'] = auth()->id();
+
         Listing::create($formFields);
         
         
