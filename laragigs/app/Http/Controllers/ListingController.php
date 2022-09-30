@@ -68,8 +68,14 @@ public function edit(Listing $listing){
 }
 
 
-  //store listing data
+  //updatelisting data
     public function update(Request $request, Listing $listing){
+
+            ///make sure loggged in user is owner
+if($listing->user_id !=auth()->id()){
+    abort(403,'unauthorizd action');
+}
+
 
 
         // dd($request->file('logo'));
@@ -97,8 +103,22 @@ public function edit(Listing $listing){
 
 //delete listing
 public function destroy(Listing $listing){
+
+            ///make sure loggged in user is owner
+if($listing->user_id !=auth()->id()){
+    abort(403,'unauthorizd action');
+}
+
+
+
     $listing->delete();
     return redirect("/")->with('message','listing DELETED');
 }
+
+//manage listing
+public function manage(){
+    return view('/listings.manage',['listings' => auth()->user()->listings()->get()]);
+}
+
 
 }
