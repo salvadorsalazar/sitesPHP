@@ -13,12 +13,12 @@
                 </h1>
                 <p class="text-2xl text-gray-200 font-bold my-4">
 ENTER YOUR INFO                </p>
-                <div>
+                {{-- <div>
                     <a
                         href="register.html"
                         class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
                         >Sign Up to enter info</a
                     >
-                </div>
+                </div> --}}
             </div>
         </section>

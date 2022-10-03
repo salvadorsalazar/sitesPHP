@@ -21,17 +21,29 @@
                 theme: {
                     extend: {
                         colors: {
-                            laravel: "black",
+                            laravel: "grey",
                         },
+
+
                     },
                 },
             };
         </script>
+
+        {{--  --}}
+
         <title>DATABASE</title>
     </head>
-    <body class="mb-48">
-        <nav class="flex justify-between items-center mb-4">
-            <a href="/"
+    <body class="mb-48 bg-gray-500	--tw-bg-opacity: 1;
+background-color: rgba(107, 114, 128, var(--tw-bg-opacity));">
+        <nav class="flex justify-between items-center mb-4 bg-blue-900 text-white">
+           
+             <button
+                            type="submit"
+                            class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600"
+                        >
+
+            <a href="/" 
                 >
         HOME        
                 
@@ -40,19 +52,39 @@
         
         
         </a>
-            <ul class="flex space-x-6 mr-6 text-lg">
+
+             </button>
+        
+        
+        
+        <ul class="flex space-x-6 mr-6 text-lg">
              {{--  --}}
              @auth   
              <li>
-                    <span class="font-bold uppercase">welcome {{auth()->user()->name}}</span>
+
+
+                    <span class="font-bold uppercase">welcome 
+                         <button
+                            type="submit"
+                            class="h-10 w-300    text-white rounded-lg bg-red-500 hover:bg-red-600"
+                        >
+                        {{auth()->user()->name}}</button></span>
                     
+                
+                
+                
                 </li>
                 <li>
+
+
                     <a href="/listings/manage" class="hover:text-laravel"
                         ><i class="fa-solid fa-gear"></i>
                         manage listings</a
                     >
                 </li>
+                
+                
+                
                 <li>
                     <form class="inline" method="POST" action="/logout">
                     
@@ -68,10 +100,17 @@
 {{--  --}}
 
                   <li>
+ <button
+                            type="submit"
+                            class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600"
+                        >
+
                     <a href="/register" class="hover:text-laravel"
                         ><i class="fa-solid fa-user-plus"></i> Register</a
                     >
                 </li>
+                </button
+                
                 <li>
                     <a href="/login" class="hover:text-laravel"
                         ><i class="fa-solid fa-arrow-right-to-bracket"></i>
@@ -91,9 +130,15 @@
 
 </main>
 
-   <footer
+   {{-- <footer
             class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center"
+        > --}}
+
+ <footer
+            class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold ;
+bg-blue-900 text-white h-20  mt-24 opacity-90 md:justify-center"
         >
+
             <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
 
             <a href="/listings/create" 

@@ -4,7 +4,7 @@
 
 <x-card>
 
-<div class="flex">
+<div class="flex bg-black text-white">
     <a href="/listings/{{$listing->id}}">
                         <img
                             class="hidden w-48 mr-6 md:block"

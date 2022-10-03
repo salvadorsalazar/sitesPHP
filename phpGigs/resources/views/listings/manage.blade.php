@@ -7,7 +7,7 @@
                         <h1
                             class="text-3xl text-center font-bold my-6 uppercase"
                         >
-                            Manage Gigs
+                            Edit Data
                         </h1>
                     </header>
 
@@ -61,7 +61,7 @@
 <tr class="border-gray-300">
     <td class="px-4 py-8 border-top border-border-gray-300 text-lg">
 
-        <p class="ttext-center">No Listings</p>
+        <p class="ttext-center">No Entries</p>
     </td>
 </tr>
     @endunless
