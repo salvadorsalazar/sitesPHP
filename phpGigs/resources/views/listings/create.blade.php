@@ -20,7 +20,7 @@
                             >
                             <input
                                 type="text"
-                                class="border border-gray-200 rounded p-2 w-full"
+                                class="border border-gray-200 rounded p-2 w-full text-black"
                                 name="company" value="{{old('company')}}"
                             />
                             @error('company')
@@ -34,7 +34,7 @@
                             >
                             <input
                                 type="text"
-                                class="border border-gray-200 rounded p-2 w-full"
+                                class="border border-gray-200 rounded p-2 w-full text-black"
                                 name="title"
                                 {{-- placeholder="Example: Senior Laravel Developer" --}}
                                 value="{{old('title')}}"
@@ -52,7 +52,7 @@
                             >
                             <input
                                 type="text"
-                                class="border border-gray-200 rounded p-2 w-full"
+                                class="border border-gray-200 rounded p-2 w-full text-black"
                                 name="location"
                                 {{-- placeholder="Example: Remote, Boston MA, etc"  --}}
                                 value="{{old('location')}}"
@@ -68,7 +68,7 @@
                             >
                             <input
                                 type="text"
-                                class="border border-gray-200 rounded p-2 w-full"
+                                class="border border-gray-200 rounded p-2 w-full text-black"
                                 name="email" . value="{{old('email')}}"
                             />
                         </div>
@@ -82,7 +82,7 @@
                             </label>
                             <input
                                 type="text"
-                                class="border border-gray-200 rounded p-2 w-full"
+                                class="border border-gray-200 rounded p-2 w-full text-black"
                                 name="website" value="{{old('website')}}"
                             />
                         </div>
@@ -93,7 +93,7 @@
                             </label>
                             <input
                                 type="text"
-                                class="border border-gray-200 rounded p-2 w-full"
+                                class="border border-gray-200 rounded p-2 w-full text-black"
                                 name="tags"
                                 {{-- placeholder="Example: Laravel, Backend, Postgres, etc" --}}
 value="{{old('tags')}}"
@@ -115,7 +115,7 @@ value="{{old('tags')}}"
                             </label>
                             <input
                                 type="file"
-                                class="border border-gray-200 rounded p-2 w-full"
+                                class="border border-gray-200 rounded p-2 w-full text-black"
                                 name="logo"
                             />
                                 @error('logo')
@@ -141,7 +141,7 @@ value="{{old('tags')}}"
                             >
 BIO                            </label>
                             <textarea
-                                class="border border-gray-200 rounded p-2 w-full"
+                                class="border border-gray-200 rounded p-2 w-full text-black"
                                 name="description"
                                 rows="10"
                                 {{-- placeholder="Include tasks, requirements, salary, etc" --}}

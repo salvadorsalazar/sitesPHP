@@ -1,5 +1,11 @@
-@props(['listing'])
+{{-- PAGE VIEW IN HOME ,MAIN AGE --}}
+{{-- PAGE VIEW IN HOME ,MAIN AGE --}}
+{{-- PAGE VIEW IN HOME ,MAIN AGE --}}
 
+
+
+
+@props(['listing'])
 
 
 <x-card>

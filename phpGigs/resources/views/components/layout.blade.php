@@ -34,9 +34,9 @@
 
         <title>DATABASE</title>
     </head>
-    <body class="mb-48 bg-gray-500	--tw-bg-opacity: 1;
+    <body class="mb-48 bg-gray-700	--tw-bg-opacity: 1;
 background-color: rgba(107, 114, 128, var(--tw-bg-opacity));">
-        <nav class="flex justify-between items-center mb-4 bg-blue-900 text-white">
+        <nav class="flex justify-between items-center mb-4 bg-black h-20 text-white">
            
              <button
                             type="submit"
@@ -108,8 +108,10 @@ background-color: rgba(107, 114, 128, var(--tw-bg-opacity));">
                     <a href="/register" class="hover:text-laravel"
                         ><i class="fa-solid fa-user-plus"></i> Register</a
                     >
+                    
                 </li>
-                </button
+
+            </button>
                 
                 <li>
                     <a href="/login" class="hover:text-laravel"
@@ -136,7 +138,7 @@ background-color: rgba(107, 114, 128, var(--tw-bg-opacity));">
 
  <footer
             class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold ;
-bg-blue-900 text-white h-20  mt-24 opacity-90 md:justify-center"
+bg-black text-white h-20  mt-24 opacity-90 md:justify-center"
         >
 
             <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
