@@ -64,11 +64,8 @@ background-color: rgba(107, 114, 128, var(--tw-bg-opacity));">
 
 
                     <span class="font-bold uppercase">welcome 
-                         <button
-                            type="submit"
-                            class="h-10 w-300    text-white rounded-lg bg-red-500 hover:bg-red-600"
-                        >
-                        {{auth()->user()->name}}</button></span>
+                      
+                        {{auth()->user()->name}}</span>
                     
                 
                 
@@ -100,10 +97,7 @@ background-color: rgba(107, 114, 128, var(--tw-bg-opacity));">
 {{--  --}}
 
                   <li>
- <button
-                            type="submit"
-                            class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600"
-                        >
+ 
 
                     <a href="/register" class="hover:text-laravel"
                         ><i class="fa-solid fa-user-plus"></i> Register</a
@@ -111,7 +105,7 @@ background-color: rgba(107, 114, 128, var(--tw-bg-opacity));">
                     
                 </li>
 
-            </button>
+            
                 
                 <li>
                     <a href="/login" class="hover:text-laravel"

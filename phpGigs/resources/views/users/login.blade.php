@@ -6,7 +6,7 @@
                         <h2 class="text-2xl font-bold uppercase mb-1">
                             login
                         </h2>
-                        <p class="mb-4">log into account  to post gigs</p>
+                        <p class="mb-4">Log In To Add Info</p>
                     </header>
 
                     <form method="POST" action="/users/authenticate" class="text-black">
@@ -49,20 +49,20 @@
 
                       
 
-                        <div class="mb-6">
+                        <div class="mb-6 text-center">
                             <button
                                 type="submit"
-                                class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
+                                class="bg-red-500 text-white rounded py-2 px-4  hover:bg-red-600"
                             >
                                 Sign in
                             </button>
                         </div>
 
-                        <div class="mt-8">
-                            <p>
+                        <div class="mt-8 text-center">
+                            <p class="text-white">
                                 dont  have an account?
                                 <a href="/register" class="text-laravel"
-                                    >rigister</a
+                                    > Register</a
                                 >
                             </p>
                         </div>
@@ -72,3 +72,14 @@
 
 
 </x-layout>
+
+
+{{-- 
+    
+    
+     <button
+                            type="submit"
+                            class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600"
+                        >
+    
+    --}}

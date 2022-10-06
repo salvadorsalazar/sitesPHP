@@ -7,7 +7,7 @@
                 ><i class="fa-solid fa-arrow-left"></i> Back
             </a>
             <div class="mx-4 ">
-                <x-card class="p-10 ">    
+                <x-card class="p-2">    
                                 {{-- <x-card class="p-10 bg-black">     --}}
 
                 <div
