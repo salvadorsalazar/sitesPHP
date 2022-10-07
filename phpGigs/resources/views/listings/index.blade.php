@@ -1,4 +1,4 @@
-<!-- <h1>Listings</h1> -->
+<!-- <h1>Listings</h1>    ...-->
 <x-layout>
 {{-- @include('partials._hero') --}}
 @include('partials._search')
