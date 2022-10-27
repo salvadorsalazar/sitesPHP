@@ -1,5 +1,6 @@
 <x-layout>
 
+{{-- login blade --}}
 
     <x-card class="p-10 rounded max-w-lg mx-auto mt-24">
                     <header class="text-center">
