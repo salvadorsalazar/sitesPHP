@@ -9,7 +9,7 @@
 
             <div class="z-10">
                 <h1 class="text-6xl font-bold uppercase text-white">
-                    DATABASE
+                    Database
                 </h1>
                 <p class="text-2xl text-gray-200 font-bold my-4">
 ENTER YOUR INFO                </p>
