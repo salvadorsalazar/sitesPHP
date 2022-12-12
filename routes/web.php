@@ -60,7 +60,7 @@ Route::get("/register", [UserController::class, 'create'])->middleware('guest');
 
 
 
-//create new user
+//create new user --updated to verify against database
 Route::post('/users',[UserController::class,'store']);
 
 
