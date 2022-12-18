@@ -5,9 +5,9 @@
     <x-card class="p-10 rounded max-w-lg mx-auto mt-24">
                     <header class="text-center">
                         <h2 class="text-2xl font-bold uppercase mb-1">
-                            login
+                            Login
                         </h2>
-                        <p class="mb-4">Log In To Add Info</p>
+                        <p class="mb-4">Log In </p>
                     </header>
 
                     <form method="POST" action="/users/authenticate" class="text-black">
